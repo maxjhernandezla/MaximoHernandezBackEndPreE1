@@ -47,12 +47,18 @@ class ProductManager {
   }
 }
 
+
+//TEST, la verdad no estoy seguro de haber comprendido bien el testeo. Pero creo que va por acá.
+
 const controladorDeProductos = new ProductManager()
 controladorDeProductos.getProducts()
 controladorDeProductos.addProducts('producto de prueba', 'este es un producto de prueba', 200, 'sin imagen', 'abc123',25)
 controladorDeProductos.getProducts()
 controladorDeProductos.addProducts('producto de prueba', 'este es un producto de prueba', 200, 'sin imagen', 'abc123',25)
 controladorDeProductos.getProducts()
-controladorDeProductos.getProductById(2)
+controladorDeProductos.addProducts('producto de prueba2', 'este es un producto de prueba', 200, 'sin imagen', 'abc345',25)
+controladorDeProductos.getProducts()
+
+controladorDeProductos.getProductById(3)
 controladorDeProductos.getProductById(1)
 
